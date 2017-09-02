@@ -26,12 +26,20 @@ namespace SimpleClassExample
       Console.WriteLine();
       #endregion
 
-      #region Using the Motorcycle type
-      // Make a Motorcycle with a rider named Tiny?
-      Motorcycle c = new Motorcycle(5);
-      c.SetDriverName("Tiny");
+      #region Molto type
+      // Make a Moto with a rider named Ti_ny?
+      Moto c = new Moto(5);
+      c.SetDriverName("Ti_ny");
       c.PopAWheely();
       Console.WriteLine("Rider name is {0}", c.driverName); // Prints an empty name value!
+      #endregion
+
+      #region Using the Motorcycle type
+      // Make a Motorcycle with a rider named Tiny?
+      Motorcycle d = new Motorcycle(5);
+      d.SetDriverName("Tiny");
+      d.PopAWheely();
+      Console.WriteLine("Rider name is {0}", d.driverName); // Prints an empty name value!
       #endregion
 
       Console.ReadLine();

@@ -1,31 +1,32 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SimpleClassExample
 {
-  class Motorcycle
-  {
-    public int driverIntensity;
+    class Moto
+    {
+            public int driverIntensity;
     public string driverName;
 
     #region Constructors
     // Constructors.
-    public Motorcycle()
+    public Moto()
     {
       Console.WriteLine("In default ctor");
     }
-    public Motorcycle(int intensity) : this(intensity, "")
+    public Moto(int intensity): this(intensity, "")
     {
       Console.WriteLine("In ctor taking an int");
     }
-    public Motorcycle(string name) : this(5, name)
+    public Moto(string name) : this(5, name)
     {
       Console.WriteLine("In ctor taking a string");
     }
 
     // This is the 'master' constructor that does all the real work.
-    public Motorcycle(int intensity, string name)
+    public Moto(int intensity, string name)
     {
       Console.WriteLine("In master ctor ");
       if (intensity > 10)
@@ -46,10 +47,10 @@ namespace SimpleClassExample
       }
     }
 
-    public void SetDriverName(string driverName)
+    public void SetDriverName(string name)
     {
-       this.driverName = driverName;
+      driverName = name;
     }
     #endregion
-  }
+    }
 }
